@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="ToDo.css">
+	<title>Список задач</title>
+</head>
+<body>
+	<section>
+		<div class="container flex">
+			<div class="todolist">
+				<div class="todolist-header flex">
+					<div class="today">
+						<div class="today_date"></div>
+						<div class="today_week"></div>
+					</div>
+					<div class="task-count"></div>
+					<span class="add-input_open">+</span>
+
+					<!-- Add task hidden input  -->
+					<div class="add-input flex">
+						<i class="far fa-window-close add-input_close"></i>
+						<div class="input-group">
+							<input type="text" id="task" class="input-form" placeholder="Задача">
+							<div class="input-group-btn">
+								<span id="add_btn" class="button">Добавить</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="todolist-main">
+					<ul id="todolist" class="list-items"></ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script src="ToDo.js"></script>
+</html>

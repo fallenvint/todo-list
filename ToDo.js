@@ -1,8 +1,8 @@
 const todolist = document.querySelector('ul.list-items');
 const todolistHeader = document.querySelector('div.todolist-header');
 const taskCounter = todolistHeader.querySelector('.task-count');
-const addBtn = document.getElementById("add_btn");
-const taskInput = document.getElementById("task");
+const addBtn = document.getElementById('add_btn');
+const taskInput = document.getElementById('task');
 let date = new Date();
 let weekday = date.getDay();
 let month = date.getMonth();
@@ -75,7 +75,7 @@ function Task(description, date, status) {
 }
 
 const addTaskToList = (task, date, checked) => {
-	const li = document.createElement("li");
+	const li = document.createElement('li');
 
 	li.className = `list-item flex ${checked}`;
 	li.innerHTML = `<i class="fas fa-check task-check"></i>
